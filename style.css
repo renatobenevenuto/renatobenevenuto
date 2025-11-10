@@ -126,3 +126,10 @@ body {
     margin: 20px auto;      /* Centraliza a foto com margens */
     object-fit: cover;      /* Garante que a foto não fique distorcida */
 }
+/* Estilo para o dashboard Power BI */
+.power-bi iframe {
+    width: 100%;       /* Faz o dashboard ocupar toda a largura da seção */
+    height: 600px;      /* Defina uma altura. 600px é um bom começo. */
+    border: none;       /* Remove a borda padrão do iframe */
+    background: #f4f4f4; /* Cor de fundo para caso o dashboard demore a carregar */
+}
