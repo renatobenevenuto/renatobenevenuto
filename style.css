@@ -248,3 +248,68 @@ body {
         max-width: 150px; /* Diminui a foto em telas menores */
     }
 }
+/* --- Estilos da Barra de Navegação (Roxa) --- */
+
+.navbar {
+    background-color: #3f51b5; /* Este é um tom de roxo/índigo profissional! */
+    padding: 1rem 1.5rem;
+    position: sticky;  /* Fica "presa" no topo ao rolar */
+    top: 0;
+    z-index: 1000;     /* Garante que ela fique acima de todo o resto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+    max-width: 960px;     /* Mesma largura do .container principal */
+    margin: 0 auto;       /* Centraliza o conteúdo da barra */
+    display: flex;
+    justify-content: space-between; /* Coloca o nome de um lado e os links do outro */
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;      /* Texto branco */
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;     /* Remove as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+    display: flex;        /* Coloca os links um ao lado do outro */
+}
+
+.navbar-links li {
+    margin-left: 1.5rem;  /* Espaço entre cada link */
+}
+
+.navbar-links a {
+    color: #f4f4f4;      /* Texto branco-acinzentado */
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #3498db;      /* Cor azul clara ao passar o mouse */
+}
+
+/* --- Responsividade da Navbar --- */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column; /* Empilha o nome e os links */
+        align-items: flex-start;
+    }
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+}
