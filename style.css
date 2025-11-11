@@ -426,7 +426,7 @@ body {
 }
 
 .publication-title a {
-    font-size: 1.4em;       /* Título grande */
+    font-size: 1.2em;       /* Título grande */
     font-weight: bold;
     color: #333;
     text-decoration: none;
@@ -449,7 +449,7 @@ body {
 }
 
 .publication-image {
-    width: 150px;           /* Tamanho da thumbnail */
+    width: 220px;           /* Tamanho da thumbnail */
     max-width: 30%;         /* Garante que não fique muito grande */
     height: auto;
     border: 1px solid #eee; /* Borda sutil na imagem */
