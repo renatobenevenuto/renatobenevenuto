@@ -403,3 +403,94 @@ body {
     color: #777;
     line-height: 1.5;
 }
+/* --- Estilo da Lista de Publicações (Estilo Yuri) --- */
+
+.publication-item {
+    display: flex;             /* A mágica: texto na esquerda, imagem na direita */
+    align-items: flex-start;   /* Alinha os itens no topo */
+    margin-bottom: 2.5rem;     /* Espaço grande entre os itens */
+    border-bottom: 1px solid #eee; /* Linha separadora sutil */
+    padding-bottom: 2.5rem;
+}
+
+/* Remove a borda e o espaço do último item */
+.publication-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.publication-text {
+    flex: 1;                /* Ocupa todo o espaço disponível */
+    padding-right: 20px;    /* Espaço para a imagem não colar no texto */
+}
+
+.publication-title a {
+    font-size: 1.4em;       /* Título grande */
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+.publication-title a:hover {
+    color: #3498db;        /* Azul que já usamos, no hover */
+}
+
+.publication-description {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+    font-style: italic;     /* Texto da descrição em itálico */
+}
+
+.publication-authors {
+    font-size: 0.9em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.publication-image {
+    width: 150px;           /* Tamanho da thumbnail */
+    max-width: 30%;         /* Garante que não fique muito grande */
+    height: auto;
+    border: 1px solid #eee; /* Borda sutil na imagem */
+    object-fit: cover;
+}
+
+.publication-links {
+    margin-top: 15px;
+}
+
+/* Estilo dos botões (PDF, Citação, etc.) */
+.pub-link {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #3498db;             /* Cor azul */
+    border: 1px solid #3498db;  /* Borda azul */
+    padding: 4px 10px;          /* Espaçamento interno pequeno */
+    border-radius: 4px;         /* Cantos arredondados */
+    text-decoration: none;
+    margin-right: 5px;          /* Espaço entre os botões */
+    transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+    background-color: #3498db;  /* Fundo azul ao passar o mouse */
+    color: #fff;                /* Texto branco */
+}
+
+/* Responsividade: em telas pequenas, empilha a imagem e o texto */
+@media (max-width: 600px) {
+    .publication-item {
+        /* Imagem vai para cima, texto para baixo */
+        flex-direction: column-reverse; 
+    }
+    .publication-image {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .publication-text {
+        padding-right: 0;
+    }
+}
