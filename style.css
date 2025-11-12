@@ -494,3 +494,48 @@ body {
         padding-right: 0;
     }
 }
+/* --- Estilo da Seção de Experiência --- */
+
+.experience-intro {
+    text-align: center; /* Centraliza o parágrafo de introdução */
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Centraliza o bloco do parágrafo */
+}
+
+.experience-list {
+    list-style: none; /* Remove a bolinha principal da lista */
+    padding-left: 0;
+    max-width: 800px; /* Limita a largura da lista para melhor leitura */
+    margin: 0 auto;   /* Centraliza a lista */
+}
+
+.experience-list li {
+    margin-bottom: 2rem; /* Espaço entre cada item de emprego */
+}
+
+.job-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.job-meta {
+    font-size: 1em;
+    font-style: italic; /* Deixa a linha da empresa/data em itálico */
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.job-description {
+    list-style-type: disc; /* Adiciona as bolinhas nos tópicos de descrição */
+    padding-left: 25px; /* Indentação dos tópicos */
+    line-height: 1.6;
+    color: #444;
+}
+
+.job-description li {
+    margin-bottom: 0.5rem; /* Espaço menor entre as responsabilidades */
+}
