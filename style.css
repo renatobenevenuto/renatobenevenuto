@@ -539,3 +539,49 @@ body {
 .job-description li {
     margin-bottom: 0.5rem; /* Espaço menor entre as responsabilidades */
 }
+/* --- Estilo da Seção de Cursos e Certificados --- */
+
+.courses-list {
+    list-style: none; /* Remove as bolinhas */
+    padding-left: 0;
+    max-width: 800px; /* Mesma largura das seções de lista */
+    margin: 30px auto 0 auto; /* Centraliza a lista e dá espaço do título */
+}
+
+.courses-list li {
+    display: flex;             /* A mágica: alinha o texto e o ano */
+    justify-content: space-between; /* Título na esquerda, ano na direita */
+    align-items: center;       /* Alinha tudo verticalmente */
+    border-bottom: 1px solid #eee; /* Linha separadora sutil */
+    padding: 1rem 0.5rem;      /* Espaçamento interno */
+}
+
+/* Remove a borda do último item da lista */
+.courses-list li:last-child {
+    border-bottom: none;
+}
+
+.course-details {
+    /* Este container segura o título e a instituição */
+    flex-grow: 1;
+    padding-right: 20px; /* Espaço para não colar no ano */
+}
+
+.course-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.course-institution {
+    font-size: 1em;
+    font-style: italic;
+    color: #666;
+}
+
+.course-year {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap; /* Garante que o ano não quebre a linha */
+}
